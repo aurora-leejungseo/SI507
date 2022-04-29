@@ -8,6 +8,9 @@ Sqlite3
 Flask
 Plotly
 
+## Demo Video
+https://drive.google.com/file/d/1u_hEB65Eo6uofJYLEaZgKguCShawNB9J/view?usp=sharing
+
 ## Data source
 ####	Base URL: 
 I used Web API, Yelp fusion, for this project. For more information, please refer to the description of this API via https://www.yelp.com/developers/documentation/v3/get_started.
