@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    li {
+      font-size: large;
+      font-family: 'Arial';
+    }
+  </style>
+</head>
+<body>
+    <h1>Restaurants in {{city}}</h1>
+      <h2>Distribution charts:</h2>
+      <ol>
+          <li><a href='/plot/{{city}}/category'>Pieplot of number of restaurant by top 10 categories in percentage</a></li>
+          <li><a href='/plot/{{city}}/rating'>Barplot of number of restaurant by rating </a></li>
+          <li><a href='/plot/{{city}}/price'>Pieplot of number of restaurants by price range in percentage </a></li>
+      </ol>
+    
+      <h2>Restaurants Recommedations based on your preference</h2>
+      <ol>
+          <li><a href='/recommendations'>Restaurants recommendations based on your preference</a></li>
+      </ol>
+    
+
+</body>
+</html>

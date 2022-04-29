@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      font-size: medium;
+      font-family: 'Arial';
+    }
+    </style>
+</head>
+<body>
+    <h1><b>Here are our recommendations based on your preference!</b></h1>
+    <h4><b>Click the url of the restaurant to see the details</b></h4>
+    <table align="left">
+        <tr>
+            <th><b>Name</b></th>
+            <th><b>Categories</b></th>
+            <th><b>Rating</b></th>
+            <th><b>Price</b></th>
+            <th><b>Address</b></th>
+            <th><b>Phone</b></th>
+            <th><b>URL</b></th>
+        </tr>
+        {% for name, categories, rating, price, address, phone, url in table %}
+        <tr>
+            <td width="250px" align="left">{{name}}</td>
+            <td width="400px" align="left">{{categories}}</td>
+            <td width="50px" align="left">{{rating}}</td>
+            <td width="50px" align="left">{{price}}</td>
+            <td width="500px" align="left">{{address}}</td>
+            <td width="150px" align="left">{{phone}}</td>
+            <td width="250px" align="left"><a href="{{url}}">{{url}}</a></td>
+        </tr>    
+        {% endfor %}
+    </table>
+</body>
+</html>
